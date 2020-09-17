@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Feuerwehr Kupferzell - Login{% endblock %} <!-- Title -->
+
+{% block head %} <!-- Head -->
+  {{ super() }}
+{% endblock %}
+
+
+{% block content %} <!-- Content -->
+
+    <div class="padding">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="/static/bootstrap.png" alt="bootrstrap Picture">
+                </div>
+                <div class="col-sm-6 ">
+                    <h2>Login</h2>
+                    {{ wtf.quick_form(form) }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block footer %}
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="lead">Linker Footer</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="lead">Mittlerer Footer</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="lead">Rechter Footer</p>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
