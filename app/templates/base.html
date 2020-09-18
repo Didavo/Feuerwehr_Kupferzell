@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ url_for('main.index') }}">Home</a></li>
-                <li><a href="{{ url_for('main.einsaetze') }}">Einsätze</a></li>
+                <li><a href="{{ url_for('main.posts') }}">Einsätze</a></li>
                 {% if current_user.is_authenticated %}
                     <li><a href="{{ url_for('main.logout') }}">Logout</a></li>
                     <li><a href="{{ url_for('main.create_new_post') }}">Neuen Post erstellen</a></li>
