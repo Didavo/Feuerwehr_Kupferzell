@@ -13,9 +13,6 @@ bootstrap = Bootstrap()
 login_manager = LoginManager()
 login_manager.login_view = 'main.login'
 
-
-
-
 def create_app():
     app = Flask(__name__)
     app.config.from_object(ProductionConfig)
@@ -25,12 +22,8 @@ def create_app():
 
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
-
-
     # if app.config['SSL_REDIDRECT']:
     #     from flask_sslify import SSLify
     #     sslify = SSLify(app)
-
-
-
     return app
+
