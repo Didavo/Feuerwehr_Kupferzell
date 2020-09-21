@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from config import ProductionConfig
+from config import ProductionConfig, TestingConfig
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 
