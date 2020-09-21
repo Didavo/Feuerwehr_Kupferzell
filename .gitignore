@@ -1,7 +1,8 @@
 data-dev.sqlite
 db_create.py
-/api
-/auth
+*.pyc
+*.sqlite
+/venv
 
 
 
