@@ -27,3 +27,4 @@ def create_app():
     #     sslify = SSLify(app)
     return app
 
+myapp = create_app()
