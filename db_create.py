@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data-dev.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ykycvpylzpifmt:dfdd4e82a555336ad8133feedb971b0f25f3ba0653aaf69cab9298eddb250e1a@ec2-34-254-24-116.eu-west-1.compute.amazonaws.com:5432/d10bdpi7er82iu'
 db = SQLAlchemy(app)
 
 
@@ -37,8 +37,6 @@ class Post(UserMixin, db.Model):
 
     def __repr__(self):
         return '<Beitrag %r>' % self.heading
-
-
 
 
 db.create_all()
